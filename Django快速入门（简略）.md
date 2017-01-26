@@ -1,4 +1,4 @@
-# Django Learning
+# Django快速入门
 
 ---
 #### 安装Django  
