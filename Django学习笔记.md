@@ -19,12 +19,12 @@
 
 ---
 >models.EmailField 邮箱类型
-.ForeignKey外键类型
-.DateTimeFileld 日期类型
-.IntegerField 整型
-.IpAddressField IP地址类型
-.FileField 文件类型
-.ImageField 图片类型
+.ForeignKey外键类型  
+.DateTimeFileld 日期类型  
+.IntegerField 整型  
+.IpAddressField IP地址类型  
+.FileField 文件类型  
+.ImageField 图片类型  
 
 ---
 - 自定义主键  
@@ -34,15 +34,15 @@ object_id = models.CharFeild(primary_key=Ture,max_length=50,default="",verbose_n
 
 ## 在view.py文件中 
 查询数据库中的记录
->如：all_message = UserMessage.objects.all() 
-all() 返回表中所有的记录，返回的记录可以执行for循环
-.filter(name='lemon', address='北京') 在filter中添加条件来返回特定的记录
-...................
-往表中写记录
-如：
-user_message = UserMessage()
-user_message.name = "xxx"
-...
-user_message.save() #向表中保存数据
+>如：all_message = UserMessage.objects.all()   
+all() 返回表中所有的记录，返回的记录可以执行for循环  
+.filter(name='lemon', address='北京') 在filter中添加条件来返回特定的记录  
+...................  
+往表中写记录  
+如：  
+user_message = UserMessage()  
+user_message.name = "xxx"  
+...  
+user_message.save() #向表中保存数据  
 
 ---
