@@ -1,4 +1,4 @@
-#Django开发环境搭建及Django项目初期配置
+#Django开发环境搭建及项目初期配置
 ---
 ##开发环境搭建
 - 首先需要明确的是安装好Python之后，就可以使用pip命令安装一些需要使用的软件（比如virtualenv django等）。在cmd中如果系统不能识别pip命令，则需要将你的Python安装路径添加到系统环境变量的path中（比如我的是安装路径D:\Python2.7.12\Scripts）。
