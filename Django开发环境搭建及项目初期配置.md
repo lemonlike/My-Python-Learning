@@ -47,13 +47,14 @@ MySQL_python-1.2.5-cp27-none-win_amd64.whl
 ![](http://i.imgur.com/pfjAR3P.png)  
 他说他在64位的windows上安装64位版本失败了，他认为.whl文件的版本不是相对于Windows版本的，而是相对于Python版本的。他的Python版本是32位的，于是他安装了32位的 安装成功了。我自己试了下发现我也安装成功了！！ 难道我之前安装的Python版本是32位的？？应该不是吧。。难道我安装的是假64位的Python？（笑哭脸）疲于去深究了。  总之，总算是迈过这个坑了。  
 
-- settings.py中的一些配置  
+- settings.py中的一些配置   
+
 ![](http://i.imgur.com/eFZW90H.png)  
-####数据库的配置  
+####数据库的配置  
 ![](http://i.imgur.com/CovzL77.png)  
-####templates路径的配置  
+####templates路径的配置  
 ![](http://i.imgur.com/Ww84zUW.png)  
-####static路径配置  
+####static路径配置  
 ![](http://i.imgur.com/z86m3fW.png)  
 
 ###如果你想学习Django，那么以上我写的都是你将要做的一些事和面临的一些问题，希望对你的Django学习有所帮助。  
