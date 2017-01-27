@@ -22,7 +22,7 @@
 
 - 安装mysql-Python驱动（**重要！**）  
 如果在项目中要用到mysql数据库，就需要在虚拟环境中安装mysql-python驱动。进入虚拟环境 `pip install mysql-python`  **Windows用户在安装的过程中很可能遇到错误！！**  
-
+就是下面这个错误
 _mysql.c(42) : fatal error C1083: Cannot open include file: 'config-win.h': No such file or directory error: command '"C:\Users\fnngj\AppData\Local\Programs\Common\Microsoft\Visual C ++ for Python\9.0\VC\Bin\amd64\cl.exe"' failed with exit status 2
 
 
@@ -36,22 +36,26 @@ _mysql.c(42) : fatal error C1083: Cannot open include file: 'config-win.h': No s
 MySQL_python-1.2.5-cp27-none-win_amd64.whl
 然后在虚拟环境中执行`pip install MySQL_python-1.2.5-cp27-none-win_amd64.whl` 就可以安装完成了。  
 
-**我在安装的过程中出现了安装64位版本失败的问题！！**错误提示是告诉我的这个平台不能安装此版本，于是我就去百度问题出现的原因，是我的mysql问题？ 还是我的Python版本问题？还是我的pip版本问题？找了两个多小时，找到了一些类似问题的解答：  
+**我在安装的过程中出现了安装64位版本失败的问题！！**
+![](http://i.imgur.com/q0Ph2p3.jpg)    
+错误提示是告诉我的这个平台不能安装此版本，于是我就去百度问题出现的原因，是我的mysql问题？ 还是我的Python版本问题？还是我的pip版本问题？找了两个多小时，找到了一些类似问题的解答：  
 ![](http://i.imgur.com/mvCEjOE.png)  
 这个小哥说，他在安装numpy时遇到了64位安装失败的错误，他升级了pip版本后，成功解决了。可是我之前已经将我的pip升级到最新版了，啊，我这样做没用。  
+...................................  
+...................................  
 继续往下看，我看到了另一个小哥的回答：  
 ![](http://i.imgur.com/pfjAR3P.png)  
 他说他在64位的windows上安装64位版本失败了，他认为.whl文件的版本不是相对于Windows版本的，而是相对于Python版本的。他的Python版本是32位的，于是他安装了32位的 安装成功了。我自己试了下发现我也安装成功了！！ 难道我之前安装的Python版本是32位的？？应该不是吧。。难道我安装的是假64位的Python？（笑哭脸）疲于去深究了。  总之，总算是迈过这个坑了。  
 
-- settings.py中的一些配置
+- settings.py中的一些配置  
 ![](http://i.imgur.com/eFZW90H.png)  
-####数据库的配置
+####数据库的配置  
 ![](http://i.imgur.com/CovzL77.png)  
-####templates路径的配置
+####templates路径的配置  
 ![](http://i.imgur.com/Ww84zUW.png)  
-####static路径配置
+####static路径配置  
 ![](http://i.imgur.com/z86m3fW.png)  
 
-###如果你想学习Django，那么以上我写的都是你将要做的一些事和面临的一些问题，希望对你的Django学习有所帮助。
-
+###如果你想学习Django，那么以上我写的都是你将要做的一些事和面临的一些问题，希望对你的Django学习有所帮助。  
+![](http://i.imgur.com/WMfbMnO.jpg)  
 （未完待续）
