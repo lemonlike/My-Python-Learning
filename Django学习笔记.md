@@ -46,3 +46,12 @@ user_message.name = "xxx"
 user_message.save() #向表中保存数据  
 
 ---
+- 取request中的数据  
+如form表单以POST方法提交来的数据： `name = request.POST.get('name', '')` 第二个值表示默认值。
+  
+- 为避免URL匹配错误，URL最好末尾以 $ 结尾。
+
+- templates中的if-else语句  
+{% if %}  {% ifequal %} 最后要以{% endif %} {% endifequal%}结尾
+
+- URL name 如命名为hello 在使用时 {% url 'hello' %}
