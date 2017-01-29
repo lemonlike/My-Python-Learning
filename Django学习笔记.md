@@ -1,4 +1,4 @@
-#Django学习笔记
+# Django学习笔记
 ---
 ## 在models.py文件中
 - verbose_name= "xxx" 是对数据库列字段的注释，在后台管理中有大用。
