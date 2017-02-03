@@ -55,3 +55,8 @@ user_message.save() #向表中保存数据
 {% if %}  {% ifequal %} 最后要以{% endif %} {% endifequal%}结尾
 
 - URL name 如命名为hello 在使用时 {% url 'hello' %}
+
+- import区域书写规范  
+第一块：写Python自带的import  
+第二块：第三方import 如django  
+第三块：自定义的models  
