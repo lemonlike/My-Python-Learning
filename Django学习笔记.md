@@ -10,8 +10,7 @@
     verbose_name="xxx"
     verbose_name_plural= verbose_name #指定后台显示的复数信息
     db_table="xxx"  #定义表名  数据库中的表名Django默认是“应用名_类名”
-    ording="-object_id" #自定义排序，注意前面的“-”表明倒序排列
-    
+    ording="-object_id" #自定义排序，注意前面的“-”表明倒序排列  
 ```
 ---
 - 新建的app 要在setting.py中的INSTALLED_APPS进行注册
