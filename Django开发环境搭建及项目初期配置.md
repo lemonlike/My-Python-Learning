@@ -8,7 +8,7 @@
   **virtualenv** 是目前最流行的 python 虚拟环境配置工具。它不仅同时支持 python2 和 python3，而且可以为每个虚拟环境指定 python 解释器，并选择不继承基础版本的包。  
 **virtualenvwrapper** 顾名思义 virtualenvwrapper 是对 virtualenv 的一个封装，目的是使后者更好用。但由于它基于 shell 开发，在 Windows 系统上，不能使用标准版本，而应使用针对 Windows batch shell 的 virtualenvwrapper-win 。  
 **我使用的是virtualenvwrapper**，使用pip命令安装它 `pip install virtualenvwrapper-win`   
-新建一个虚拟环境 起名为testvir `mkvirturalenv testvir` 新建的虚拟环境默认目录为C:\Users\asd\Envs\testvir   
+新建一个虚拟环境 起名为testvir `mkvirtualenv testvir` 新建的虚拟环境默认目录为C:\Users\asd\Envs\testvir   
 一些常用命令：`workon`:查看系统中的虚拟环境； `workon xxx`:进入某一个虚拟环境； `deactivate`:退出虚拟环境。
 
 - 使用pip安装一些需要用到的软件开发包  

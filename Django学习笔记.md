@@ -57,5 +57,5 @@ user_message.save() #向表中保存数据
 
 - import区域书写规范  
 第一块：写Python自带的import  
-第二块：第三方import 如django  
-第三块：自定义的models  
+第二块：写第三方import 如django  
+第三块：写自定义的models  
