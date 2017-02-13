@@ -17,3 +17,15 @@
 import sys  
 sys.path.insert(0, os.path.join(BASE_DIR, 'apps'))
 ```
+- Django admin（xadmin）后台管理系统的特点  
+1.权限管理 2.少前端样式 3.快速开发
+
+- 将后台管理系统设置为中文、调整时区  
+![](http://i.imgur.com/8Q1tYDr.png)  
+
+- 新建名为extra_apps的Python包，用来存放第三方源码包，如xadmin等。  
+需要将这个包Mark为source包，不然在pycharm中会报错。若要在cmd中以manage.py方式运行项目，需要把包加入到项目搜索目录下，同 上面讲到的apps。
+
+- 把表单注册到xadmin中  
+![](http://i.imgur.com/vObsx7B.png)  
+继承的是object类； 在search_fields和list_filter中要注意 变量是**外键类型**的情况。
