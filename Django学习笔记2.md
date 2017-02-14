@@ -35,11 +35,27 @@ sys.path.insert(0, os.path.join(BASE_DIR, 'apps'))
 ![](http://i.imgur.com/z6aEzHx.png)  
 ![](http://i.imgur.com/UCuSxds.png)  
 
-BaseSetting类配置主题  
-GlobalSettings类配置左上角标题、底部名称、左侧菜单显示风格。  
-注意注册方式，需要引入xadmin中的views  
+ BaseSetting类配置主题  
+ GlobalSettings类配置左上角标题、底部名称、左侧菜单显示风格。  
+ 注意注册方式，需要引入xadmin中的views  
 
--app显示名称的设置(以uses为例)  
+- app显示名称的设置(以uses为例)  
 在应用对应的apps.py文件中,设置`verbose_name = u"用户信息"`  
 在__init__.py文件中 `default_app_config = "users(应用名).apps.UsersConfig"`  
 
+- 自定义登录时的验证方法（如 输入用户名或邮箱都可登陆）  
+![](http://i.imgur.com/5X5p2ax.png)  
+在settings.py中注册上面的类  
+![](http://i.imgur.com/eoXqY77.png)  
+使用函数方式写view  
+![](http://i.imgur.com/YdF2FNv.png)   
+
+- 基于类 实现view  
+![](http://i.imgur.com/C484GTW.png)  
+
+- 创建forms.py文件用于做表单验证  
+![](http://i.imgur.com/UlAzyuf.png)  
+需要注意的一个地方是form中定义的变量名(username、password等)要与html中的form表单中的input的name 名字保持一致。
+
+在html中获取表单验证返回的错误信息  
+![](http://i.imgur.com/muRFViv.png)  
