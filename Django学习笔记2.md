@@ -29,3 +29,17 @@ sys.path.insert(0, os.path.join(BASE_DIR, 'apps'))
 - 把表单注册到xadmin中  
 ![](http://i.imgur.com/vObsx7B.png)  
 继承的是object类； 在search_fields和list_filter中要注意 变量是**外键类型**的情况。
+
+- Xadmin全局配置  
+放在adminx.py文件中  
+![](http://i.imgur.com/z6aEzHx.png)  
+![](http://i.imgur.com/UCuSxds.png)  
+
+BaseSetting类配置主题  
+GlobalSettings类配置左上角标题、底部名称、左侧菜单显示风格。  
+注意注册方式，需要引入xadmin中的views  
+
+-app显示名称的设置(以uses为例)  
+在应用对应的apps.py文件中,设置`verbose_name = u"用户信息"`  
+在__init__.py文件中 `default_app_config = "users(应用名).apps.UsersConfig"`  
+
