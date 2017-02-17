@@ -67,3 +67,25 @@ EMAIL_FROM = "lemonyolo@sina.com"
 首先跳转到找回密码页面，填写邮箱、验证码，提交后，后台向邮箱中发送验证链接。点击链接跳转到修改密码页面。填写密码，提交过程中对表单验证，无误后，将新密码写入数据库，最后跳转到登陆页面。  
 一些细节的地方，比如注册时邮箱已存在则需要返回提示信息等等，需要在开发时考虑周全，在这就不再赘述了。  
 
+- Template模板继承  
+包裹需要继承的部分：  
+`{% block xxx %} {% endblock %}`  
+在新html页面中引入：  
+`{% extends 'base.html' %} {% endblock %}`  
+
+- 处理上传文件的配置  
+
+```
+settings.py文件中：  
+MEDIA_URL = '/media/'  
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')  
+TEMPLATES中：
+'django.core.context_processors.media' 
+
+配置url：  
+from django.views.static import serve  
+url(r'^media/(?P<path>.*)$', serve, {"document_root": MEDIA_ROOT}),
+
+HTML中：
+{{ MEDIA_URL }}{{ 图片的相对路径 }}  
+```
