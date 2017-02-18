@@ -89,3 +89,21 @@ url(r'^media/(?P<path>.*)$', serve, {"document_root": MEDIA_ROOT}),
 HTML中：
 {{ MEDIA_URL }}{{ 图片的相对路径 }}  
 ```
+- 分页功能  
+安装`pip install django-prue-pagination`  
+相关配置和使用方法 请参考它在github上的使用文档  
+
+- ModelForm  
+参考样例：  
+![](http://i.imgur.com/ebrkHk5.png)  
+可自定义验证的方法，定义的方法名称需要以clean开头  
+![](http://i.imgur.com/yTbDY6R.png)  
+使用ModelForm可以直接向数据库中存数据  
+返回的提示信息使用json ajax 这个地方得好好看看  
+
+- URL的inclue实现URL的分发  
+`url(r'^org/', include('organization.urls', namespace="org")),`  
+
+- 一对多关系中  
+![](http://i.imgur.com/NHtj77U.png)  
+在“多”中定义“一”的外键，可以使用xxx(一)一条记录.xxx（多）_set.all()方法从“一”中取得“多”的所有值。
