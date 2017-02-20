@@ -107,3 +107,18 @@ HTML中：
 - 一对多关系中  
 ![](http://i.imgur.com/NHtj77U.png)  
 在“多”中定义“一”的外键，可以使用xxx(一)一条记录.xxx（多）_set.all()方法从“一”中取得“多”的所有值。
+
+- 在Models中定义的表，其中有的字段若使用了choices，则在html中调用该字段时需要这样调用：  
+```
+如Models中定义：  
+degree = models.CharField(choices(('gj', '高级'), ('zj', '中级'), ('cj', '初级')), max_length=3)  
+-
+在html中为了让其显示文字的值，调用该字段时：
+course.get_degree_display
+若使用 course.degree 则显示的值是 gj zj cj 。
+```
+
+- 可以在models中定义函数，并可这样取到有外键关系的表值。  
+![](http://i.imgur.com/zrLwQjn.png)  
+
+- 在表中可自定义一个tag(标签)字段，使用filter来检索具有相同tag的记录，达到进行相关推荐的效果。  
