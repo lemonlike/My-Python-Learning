@@ -123,3 +123,11 @@ course.get_degree_display
 ![](http://i.imgur.com/zrLwQjn.png)  
 
 - 在表中可自定义一个tag(标签)字段，使用filter来检索具有相同tag的记录，达到进行相关推荐的效果。  
+
+- 在models中添加一个外键字段时，需要设置null=True blank=True，不然在migrate时会报错。  
+
+- 相关推荐  
+![](http://i.imgur.com/FEwdYoL.png)  
+
+- 登陆验证，若未登录，则跳转到登录页面  
+![](http://i.imgur.com/bGHLZ0m.png)  
