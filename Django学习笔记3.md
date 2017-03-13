@@ -90,7 +90,7 @@ HTML中：
 {{ MEDIA_URL }}{{ 图片的相对路径 }}  
 ```
 - 分页功能  
-安装`pip install django-prue-pagination`  
+安装`pip install django-pure-pagination`  
 相关配置和使用方法 请参考它在github上的使用文档  
 
 - ModelForm  
