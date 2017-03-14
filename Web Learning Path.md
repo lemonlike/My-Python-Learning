@@ -3,7 +3,7 @@
 ---
 ## HTML
 ## CSS
-## BootStrap
 ## Python
 ## Django
 ## Xadmin
+## BootStrap
