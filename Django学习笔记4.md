@@ -28,6 +28,7 @@ CSRF是一种依赖web浏览器的、被混淆过的代理人攻击（deputy att
 
 - 富文本插件  
 DjangoUeditor  
+了解xadmin插件的开发方法
 
 - 反向解析  
 从映射名到URL地址的解析功能。  
